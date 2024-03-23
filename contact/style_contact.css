@@ -314,10 +314,6 @@ input:checked + label .description {
         display: none;
     }
 
-    div.boite img{
-        width: 250px;
-    } 
-
     div.boite{
         /* background-color: red; */
         backdrop-filter: blur(10px);
@@ -327,16 +323,48 @@ input:checked + label .description {
         color: white;
         margin-bottom: 10px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
+
+    div.boite .row {
+        color: black;
+        display: flex;
+        flex-wrap: nowrap;
+        /* background-color: red; */
+    }
+
+    div.boite .row .icon {
+        background: white;
+        color: black;
+        font-weight: 900;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+    }
+
+    .description{
+        align-self: center;
+    }
+
+    div.boite .pic{
+        width: auto;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+    }
+
+
+    div.boite img{
+        width: 250px;
+        align-self: end;
+    } 
 
 }
 
-@media (max-width: 500px) {
-    div.boite{
-        width: 90%;
-    }
-}
 
 section.bouton {
     position: relative;
