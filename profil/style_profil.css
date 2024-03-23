@@ -297,6 +297,7 @@ div.item hr{
         position: relative;
         display: block;
         z-index: 1000;
+        width: 30px;
     }
 
     #icons:before{

@@ -190,6 +190,10 @@ hr.titre_dessous{
     animation-play-state: paused;
 }
 
+.logos-slide a{
+    text-decoration: none;
+}
+
 .logos:hover img{
     filter: grayscale(100%);
 }
@@ -234,6 +238,7 @@ div.item{
     width: 100%;
     gap: 0 5%;
     margin-bottom: 30px;
+    padding-top: 15px;
 }
 
 .image-list{
@@ -253,6 +258,7 @@ div.item{
     /* background-color: red; */
     width: 100%;
 }
+
 
 .text-item p{
     text-align: justify;
@@ -291,13 +297,14 @@ div.item{
     }
 
     .logos-slide img{
-        height: 100px;
+        height: 90px;
     }
 
     #icons{
         position: relative;
         display: block;
         z-index: 1000;
+        width: 30px;
     }
 
     #icons:before{
@@ -337,6 +344,18 @@ div.item{
 
     nav.active .background{
         left: 0;
+    }
+
+    .item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-item{
+        align-self: center;
+        padding-bottom: 20px;
+        height: 100px;
+        width: auto;
     }
 }
 
