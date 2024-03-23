@@ -6,7 +6,6 @@
 	margin: 0;
 	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	font-weight: 300;
-    box-sizing: border-box;
     scroll-behavior: smooth;
     /* border: 2px solid red; */
 }
@@ -252,16 +251,12 @@ input:checked + label .description {
         width: 50vw;
     }
 
-    div.box, nav{
+    div.boite, nav{
         width: 80%;
     }
 }
 
 @media (max-width: 800px){
-    div.box{
-        width: 90%;
-    }
-
     .logos-slide img{
         height: 100px;
     }
@@ -318,7 +313,7 @@ input:checked + label .description {
     div.boite{
         /* background-color: red; */
         backdrop-filter: blur(10px);
-        width: 80%;
+        width: 85%;
         /* height: 900px; */
         border-radius: 3vw;
         color: white;
@@ -363,7 +358,12 @@ input:checked + label .description {
         width: 250px;
         align-self: end;
     } 
+}
 
+@media (max-width: 500px) {
+    div.boite{
+        width: 90%;
+    }
 }
 
 

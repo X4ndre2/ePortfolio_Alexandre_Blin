@@ -251,6 +251,22 @@ div.droite{
     transition: 0.5s;
 }
 
+@media (max-width: 1200px) {
+    div.boite, nav{
+        width: 80%;
+    }
+
+    div.droite{
+        display: none;
+    }
+
+    div.gauche{
+        margin: 0 10%;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+}
+
 @media (max-width: 800px){
     #icons{
         position: relative;
@@ -296,29 +312,11 @@ div.droite{
     nav.active .background{
         left: 0;
     }
-}
 
-
-@media (max-width: 1200px) {
-    div.boite, nav{
-        width: 80%;
-    }
-
-    div.droite{
-        display: none;
-    }
-
-    div.gauche{
-        margin: 0 10%;
-        padding-bottom: 30px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 670px) {
     .titre h1{
         font-size: 40px;
     }
+
 }
 
 @media (max-width: 500px) {

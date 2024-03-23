@@ -264,9 +264,18 @@ div.item hr{
     transition: 0.5s;
 }
 
+@media (max-width: 1200px){
+    div.boite, nav{
+        width: 80%;
+    }
+}
+
 @media (max-width: 800px) {
+    div.boite{
+        width: 85%;
+    }
+
     div.tableau{
-        /* background-color: yellow; */
         display: grid;
         grid-template-columns: 100%;
         width: 80%;
@@ -290,9 +299,6 @@ div.item hr{
         grid-column: 1/2;
     }
 
-}
-
-@media (max-width: 800px){
     #icons{
         position: relative;
         display: block;
@@ -339,15 +345,9 @@ div.item hr{
     }
 }
 
-@media (max-width: 1200px){
-    div.boite, nav{
-        width: 80%;
-    }
-}
-
 @media (max-width: 500px) {
     div.boite{
-        width: 85%;
+        width: 90%;
     }
 }
 
