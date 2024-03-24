@@ -264,6 +264,29 @@ hr.titre_dessous{
 
 
 
+.map {
+    width: 85%;
+    height: 500px;
+  }
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .dossier{
     width: 85% ;
@@ -390,6 +413,11 @@ hr.titre_dessous{
         align-self: center;
     }
 
+    .map {
+        width: 90%;
+        height: 400px;
+      }
+
 }
 
 @media (max-width: 700px) {
@@ -438,6 +466,12 @@ hr.titre_dessous{
     a h1{
         font-weight: 900;
     }
+
+    .map {
+        width: 90%;
+        height: 300px;
+      }
+
 }
 
 

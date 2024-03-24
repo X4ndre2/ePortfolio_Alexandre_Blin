@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style_realisation.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../contenu/head.png" type="image/x-icon">
+    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@^2.4/dist/maplibre-gl.css' />
+    <script src='https://unpkg.com/maplibre-gl@^2.4/dist/maplibre-gl.js'></script>
   </head>
   <body>
     <div class="fond_1"></div>
@@ -148,7 +150,7 @@
                     <hr class="titre_dessous">
                 </section>
                 <div class="container">
-
+                    <div id="map" class="map"></div>                   
                 </div>
             </section>
             <section class="competence" id="atelier">
@@ -267,6 +269,7 @@
     </section>
     <script src="../burger.js"></script>
     <script src="../script.js"></script>
+    <script src="./map.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
 </body>
