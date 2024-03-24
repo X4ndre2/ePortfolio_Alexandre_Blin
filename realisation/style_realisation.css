@@ -204,7 +204,7 @@ hr.titre_dessous{
     /* background-color: red; */
     display: flex;
     width: 85%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 10px;
 }
 
@@ -223,7 +223,9 @@ hr.titre_dessous{
 }
 
 .carte h1, .dossier h1{
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1rem + 0.75vw);
+    padding-bottom: 10px;
+    font-weight: bold;
 }
 
 .carte h2, .dossier h2{
@@ -257,6 +259,9 @@ hr.titre_dessous{
 .paysage .text{
     padding-bottom: 20px;
 }
+
+
+
 
 
 
@@ -294,7 +299,6 @@ hr.titre_dessous{
 
 
 
-
 #icons{
     cursor: pointer;
     color: white;
@@ -315,8 +319,6 @@ hr.titre_dessous{
 }
 
 @media (max-width: 1200px){
-    
-
     div.boite, nav{
         width: 80%;
     }
@@ -374,6 +376,19 @@ hr.titre_dessous{
 
     nav.active .background{
         left: 0;
+    }
+
+    .portait{
+        flex-direction: column;
+    }
+
+    .portait .text{
+        width: 100%;
+    }
+
+    .portait a{
+        width: 65%;
+        align-self: center;
     }
 
 }
