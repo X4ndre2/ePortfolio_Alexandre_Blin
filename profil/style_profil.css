@@ -119,7 +119,7 @@ div.presentation{
 }
 
 .presentation h1{
-    font-size: 25px;
+    font-size: calc(1rem + 0.45vw);
 }
 
 section.titre{
@@ -353,11 +353,6 @@ div.item hr{
     .titre h1{
         font-size: 40px;
     }
-
-    .presentation h1{
-        font-size: 20px;
-    }
-
 }
 
 @media (max-width: 500px) {

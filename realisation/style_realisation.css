@@ -274,7 +274,6 @@ hr.titre_dessous{
 
 .dossier h3{
     padding-top: 20px;
-    text-align: justify;
 }
 
 .dossier h3 a{
@@ -387,7 +386,7 @@ hr.titre_dessous{
     }
 
     .portait a{
-        width: 65%;
+        width: 85%;
         align-self: center;
     }
 
