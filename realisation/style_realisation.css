@@ -297,6 +297,7 @@ hr.titre_dessous{
 
 .dossier h3{
     padding-top: 20px;
+    font-size: calc(1rem + 0.1vw);
 }
 
 .dossier h3 a{
