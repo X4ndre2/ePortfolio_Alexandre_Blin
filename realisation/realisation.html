@@ -150,6 +150,17 @@
                     <hr class="titre_dessous">
                 </section>
                 <div class="container">
+                    <div class="nav_map">
+                        <button type="button" id="Gare" class="btn btn-success">Gare SNCF</button>
+                        <fieldset>
+                            <label class="categoryLabel">Données de mobilités</label>
+                            
+                            <div>
+                                <input type="checkbox" id="PLUi" value="PLUi" onchange="switchlayer('synthese_plui_2021')"/>
+                                <label for="PLUi">PLUi</label>
+                            </div>                          
+                          </fieldset>
+                    </div>
                     <div id="map" class="map"></div>                   
                 </div>
             </section>

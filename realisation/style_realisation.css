@@ -262,15 +262,28 @@ hr.titre_dessous{
 
 
 
+.nav_map{
+    /* background-color: red; */
+    width: 85%;
+    padding-bottom: 20px;
+}
 
+.nav_map fieldset{
+    width: 50%;
+    border: none;
+}
 
 .map {
     width: 85%;
     height: 500px;
   }
 
-
+.maplibregl-ctrl-scale {
+    font-size: 10px; /* Modifie la taille du texte de l'échelle */
+    line-height: 1.5; /* Ajuste l'espacement entre les lignes */
+}
   
+
 
 
 
