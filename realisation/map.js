@@ -55,6 +55,7 @@ map.on('load', () => {
       type: 'geojson',
       data: 'https://www.data.gouv.fr/fr/datasets/r/1012fe94-088c-4cb7-b353-2996917f9b86'
     },
+    'layout': { 'visibility': 'none' },
     'paint': {
       'fill-color': [
         'match',
@@ -76,15 +77,28 @@ map.on('load', () => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const PLUiCheckbox = document.getElementById('PLUiCheckbox');
+  const ContourCommuneCheckbox = document.getElementById('ContourCommuneCheckbox');
 
-function switchlayer(layerId) {
-  var checkbox = document.getElementById('PLUi');
-  if (checkbox.checked) {
-      map.setLayoutProperty(layerId, 'visibility', 'visible');
-  } else {
-      map.setLayoutProperty(layerId, 'visibility', 'none');
+  PLUiCheckbox.addEventListener('change', function () {
+      toggleLayerVisibility('synthese_plui_2021', this.checked);
+  });
+
+  ContourCommuneCheckbox.addEventListener('change', function () {
+      toggleLayerVisibility('ContourCommune', this.checked);
+  });
+});
+
+function toggleLayerVisibility(layerId, isVisible) {
+  const layer = map.getLayer(layerId);
+  if (layer) {
+      map.setLayoutProperty(layerId, 'visibility', isVisible ? 'visible' : 'none');
   }
 }
+
+
+
 
 
 

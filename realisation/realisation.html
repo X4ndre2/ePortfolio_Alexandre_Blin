@@ -154,12 +154,15 @@
                         <button type="button" id="Gare" class="btn btn-success">Gare SNCF</button>
                         <fieldset>
                             <label class="categoryLabel">Données de mobilités</label>
-                            
                             <div>
-                                <input type="checkbox" id="PLUi" value="PLUi" onchange="switchlayer('synthese_plui_2021')"/>
-                                <label for="PLUi">PLUi</label>
-                            </div>                          
-                          </fieldset>
+                                <input type="checkbox" id="PLUiCheckbox" value="PLUi"/>
+                                <label for="PLUiCheckbox">PLUi</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="ContourCommuneCheckbox" value="ContourCommune"/>
+                                <label for="ContourCommuneCheckbox">Contour des communes</label>
+                            </div>                        
+                        </fieldset>                        
                     </div>
                     <div id="map" class="map"></div>                   
                 </div>
