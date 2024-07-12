@@ -229,6 +229,10 @@ div.item hr{
     grid-row: 8/9;
 }
 
+.item9{
+    grid-row: 9/10;
+}
+
 .item_gauche {
     margin-left: auto;
     text-align: end;
@@ -246,7 +250,7 @@ div.item hr{
 .item_centre{
     background-color: white;
     grid-column: 2/3;
-    grid-row: 1/-1;
+    grid-row: 1/10;
 }
 
 #icons{
